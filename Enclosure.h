@@ -3,9 +3,25 @@
 
 #include "Animal.h"
 
-//define enclosure class here 
 
+public class enclosure{
+    private:
+    animal* animal;
+    int capacity;
+    int currentCount;
+    
+    public:
+    this -> animal* = animal;
+    this -> capacity = capacity;
+    this -> currentCount = currentCount;
 
+   ~destructor(){
+        delete animal;
+    }
+    
+    
+    
+};
 
 
 
