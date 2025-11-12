@@ -3,11 +3,15 @@
 
 #include <string>
 using namespace std;
-
-//define visitor class here
-
-
-
+public class visitor{
+    private:
+    string visitorName;
+    int ticketsBought;
+    
+    public:
+    this -> visitorName = visitorName;
+    this -> ticketsBought = ticketsBought;
+}
 
 
 
