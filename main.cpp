@@ -43,7 +43,18 @@ vistor{
     }
 }
 int main() {
-    
-    
+    Enclosure* enclosure = new Enclosure(5);
+   Animal* lion = new Mammal("Leo the Lion", 5, true, "Golden");
+    Animal* eagle = new Bird("Eddie the Eagle", 3, false, 2.5);
+    Animal* snake = new Reptile("Sam the Snake", 2, true, true);
+
+    enclosure->addAnimal(lion);
+  enclosure->addAnimal(eagle);
+    enclosure->addAnimal(snake);
+    enclosure->displayAnimals();
+    Visitor visitor("Ahmed Ali", 2);
+    visitor.displayInfo();
+    delete enclosure;
+
     return 0;
 }
