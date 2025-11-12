@@ -3,11 +3,10 @@
 
 #include "Animal.h"
 
-//define reptile class here
-
-
-
-
+public reptile :: public animal{
+        bool isVenomous;
+        
+    }
 
 
 
